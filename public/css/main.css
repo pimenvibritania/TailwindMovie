@@ -5101,6 +5101,10 @@ video {
   margin: -1px;
 }
 
+.m-fix {
+  margin: -1rem;
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -5479,6 +5483,16 @@ video {
 .-mx-px {
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.my-fix {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.mx-fix {
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .mt-0 {
@@ -6087,6 +6101,22 @@ video {
 
 .-ml-px {
   margin-left: -1px;
+}
+
+.mt-fix {
+  margin-top: -1rem;
+}
+
+.mr-fix {
+  margin-right: -1rem;
+}
+
+.mb-fix {
+  margin-bottom: -1rem;
+}
+
+.ml-fix {
+  margin-left: -1rem;
 }
 
 .max-h-full {
@@ -14966,6 +14996,52 @@ video {
   transition-delay: 1000ms;
 }
 
+.spinner {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.spinner::after {
+  content: '';
+  position: absolute !important;
+  top: calc(50% - (1em / 2));
+  left: calc(50% - (1em / 2));
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #dae1e7;
+  border-radius: 9999px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-animation: spinAround 500ms infinite linear;
+          animation: spinAround 500ms infinite linear;
+}
+
+@-webkit-keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner{
+  position: absolute;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -19445,6 +19521,10 @@ video {
     margin: -1px;
   }
 
+  .sm\:m-fix {
+    margin: -1rem;
+  }
+
   .sm\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -19823,6 +19903,16 @@ video {
   .sm\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:my-fix {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .sm\:mx-fix {
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .sm\:mt-0 {
@@ -20431,6 +20521,22 @@ video {
 
   .sm\:-ml-px {
     margin-left: -1px;
+  }
+
+  .sm\:mt-fix {
+    margin-top: -1rem;
+  }
+
+  .sm\:mr-fix {
+    margin-right: -1rem;
+  }
+
+  .sm\:mb-fix {
+    margin-bottom: -1rem;
+  }
+
+  .sm\:ml-fix {
+    margin-left: -1rem;
   }
 
   .sm\:max-h-full {
@@ -29309,6 +29415,28 @@ video {
   .sm\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .sm\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .sm\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #dae1e7;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 768px) {
@@ -33790,6 +33918,10 @@ video {
     margin: -1px;
   }
 
+  .md\:m-fix {
+    margin: -1rem;
+  }
+
   .md\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -34168,6 +34300,16 @@ video {
   .md\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:my-fix {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .md\:mx-fix {
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .md\:mt-0 {
@@ -34776,6 +34918,22 @@ video {
 
   .md\:-ml-px {
     margin-left: -1px;
+  }
+
+  .md\:mt-fix {
+    margin-top: -1rem;
+  }
+
+  .md\:mr-fix {
+    margin-right: -1rem;
+  }
+
+  .md\:mb-fix {
+    margin-bottom: -1rem;
+  }
+
+  .md\:ml-fix {
+    margin-left: -1rem;
   }
 
   .md\:max-h-full {
@@ -43654,6 +43812,28 @@ video {
   .md\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .md\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .md\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #dae1e7;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -48135,6 +48315,10 @@ video {
     margin: -1px;
   }
 
+  .lg\:m-fix {
+    margin: -1rem;
+  }
+
   .lg\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -48513,6 +48697,16 @@ video {
   .lg\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:my-fix {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .lg\:mx-fix {
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .lg\:mt-0 {
@@ -49121,6 +49315,22 @@ video {
 
   .lg\:-ml-px {
     margin-left: -1px;
+  }
+
+  .lg\:mt-fix {
+    margin-top: -1rem;
+  }
+
+  .lg\:mr-fix {
+    margin-right: -1rem;
+  }
+
+  .lg\:mb-fix {
+    margin-bottom: -1rem;
+  }
+
+  .lg\:ml-fix {
+    margin-left: -1rem;
   }
 
   .lg\:max-h-full {
@@ -57999,6 +58209,28 @@ video {
   .lg\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .lg\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .lg\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #dae1e7;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -62480,6 +62712,10 @@ video {
     margin: -1px;
   }
 
+  .xl\:m-fix {
+    margin: -1rem;
+  }
+
   .xl\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -62858,6 +63094,16 @@ video {
   .xl\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:my-fix {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .xl\:mx-fix {
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .xl\:mt-0 {
@@ -63466,6 +63712,22 @@ video {
 
   .xl\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xl\:mt-fix {
+    margin-top: -1rem;
+  }
+
+  .xl\:mr-fix {
+    margin-right: -1rem;
+  }
+
+  .xl\:mb-fix {
+    margin-bottom: -1rem;
+  }
+
+  .xl\:ml-fix {
+    margin-left: -1rem;
   }
 
   .xl\:max-h-full {
@@ -72343,5 +72605,27 @@ video {
 
   .xl\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .xl\:spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+
+  .xl\:spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #dae1e7;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    -webkit-animation: spinAround 500ms infinite linear;
+            animation: spinAround 500ms infinite linear;
   }
 }
